@@ -172,11 +172,12 @@ header{
     color: white;
     text-align: center;
     padding: 20px 0;
+    border-radius: 10px;
 }
 
 .footer p {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .social-icons a {
