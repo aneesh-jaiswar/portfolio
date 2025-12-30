@@ -15,7 +15,7 @@ body{
 
 header{
     width: 100%;
-    background-color: black;
+    background-color: #222;
 }
 
 .nav{
@@ -80,10 +80,6 @@ header{
     min-height: calc(100vh - 60px);
     display: flex;
     align-items: center;
-    background-image: url("../images/aneeshportfolio.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .hero-content{
@@ -173,7 +169,7 @@ header{
 }
 
 .footer {
-    background-color: black;
+    background-color: #222;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -233,5 +229,4 @@ font-size:1.1rem;
 max-width:220px;
 }
 }
-
 
