@@ -80,7 +80,7 @@ header{
     min-height: calc(100vh - 60px);
     display: flex;
     align-items: center;
-    background-image: url(aneeshportfolio.avif);
+    background-image: url(aneeshportfolio.png);
     background-size: cover;
 }
 
