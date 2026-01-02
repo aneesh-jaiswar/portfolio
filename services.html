@@ -3,62 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Skills | Aneesh</title>
-<style>
-body {
-    background: #000000;
-    color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.skills{
-    font-size: large;
-    list-style-type: gap;
-    padding-bottom: 10px;
 
-}
-.skills li{
-    margin-bottom: 5px;
-    padding: 5px;
-}
-h1{
-    color: #ff0000;
-    text-decoration: underline;
-    text-align: center;
-}
-a{
-    color: grey;
-    font-size: large;
-}
-a:hover{
-    color: red;
-}
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-@media (max-width:600px){
-h1{
-font-size:1.6rem;
-}
+        body {
+            min-height: 100vh;
+            background: #000;
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+        }
 
-.skills li{
-font-size:0.95rem;
-padding:0.4rem 0.8rem;
-}
-}
-</style>
+        h1{
+            color: #ff0000;
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 100px;
+            letter-spacing: 1px;
+        }
+
+        .container{
+            width: 90%;
+            max-width: 600px;
+            height: 60vh;
+            padding: 30px;
+            border: 1px solid #333;
+            border-radius: 12px;
+            background: #000;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+        }
+
+        .skills{
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .skills li{
+            padding: 12px 15px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background: #000;
+            text-align: center;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .skills li:hover{
+            border-color: red;
+            color: red;
+            transform: translateY(-4px);
+            box-shadow: 0 5px 12px rgba(255, 0, 0, 0.25);
+        }
+
+        a{
+            display: inline-block;
+            text-decoration: none;
+            color: grey;
+            font-size: large;
+            transition: color 0.3s ease, transform 0.3s ease;
+            margin-top: 50px;
+        }
+
+        a:hover{
+            color: red;
+            transform: translateX(-5px);
+        }
+
+        @media (max-width:600px){
+            h1{
+                font-size: 1.6rem;
+            }
+
+            .skills li{
+                font-size: 0.95rem;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>My Skills</h1>
-<br><br>
-<ul class="skills">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Responsive Design</li>
-    <li>Git & GitHub</li>
-    <li>Python</li>
-    <li>Java(Basic)</li>
-</ul>
-<br><br>
+    <h1>My Skills</h1>
 
-<a href="index.html">⬅ Back to Home</a>
+    <div class="container">
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+            <li>Python</li>
+            <li>Java (Basic)</li>
+        </ul>
+
+        <a href="index.html" >⬅ Back to Home</a>
+    </div>
+
 </body>
 </html>
