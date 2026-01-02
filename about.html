@@ -13,6 +13,7 @@
     padding: 40px;
     }
 
+
 p {
     max-width: 800px;
     margin: auto;
@@ -30,13 +31,18 @@ h1 {
     }
 
 a{
+    display: inline-block;
+    text-decoration: none;
     color: grey;
     font-size: large;
-    
-}
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-top: 50px;
+    }
+
 a:hover{
     color: red;
-}
+    transform: translateX(-5px);
+    }
 
 @media (max-width:600px){
 h1{
@@ -57,6 +63,7 @@ padding:1.5rem;
 <body>
 
 <h1>About Me</h1><br><br>
+
 <p>
     Hi, I’m Aneesh, a passionate Web Developer & Designer.
     I love building responsive websites using HTML, CSS, and JavaScript.
@@ -73,5 +80,6 @@ padding:1.5rem;
 <br>
 
 <a href="index.html">⬅ Back to Home</a>
+
 </body>
 </html>
