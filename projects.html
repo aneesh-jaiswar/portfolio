@@ -40,15 +40,20 @@ h2 {
 }
 
 
-a{
+a{ 
+    display: inline-block;
+    text-decoration: none;
     color: grey;
     font-size: large;
-    margin-top: 20px;
-}
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-top: 50px;
+    margin-left: 10px;
+    }
 
 a:hover{
     color: red;
-}
+    transform: translateX(-5px);
+    }
 
 footer {
     background-color: #222;
